@@ -85,7 +85,7 @@ public class ConsoleUI implements ProgressObserver {
         requireGroup();
         System.out.print("Ім'я студента: ");
         String name = scanner.nextLine();
-        System.out.print("Курс (1-6): ");
+        System.out.print("Курс (1-5): ");
         int course = Integer.parseInt(scanner.nextLine());
         System.out.print("Чи є комп'ютер/ноутбук? (так/ні): ");
         boolean hasPc = scanner.nextLine().trim().equalsIgnoreCase("так");
