@@ -17,7 +17,7 @@ public class EventManager {
     }
 
     public void notify(ProgressEventArgs args) {
-        for (ProgressObserver observer : listeners) {
+        for (ProgressObserver observer : new ArrayList<>(listeners)) {
             observer.onProgressUpdated(args);
         }
     }
